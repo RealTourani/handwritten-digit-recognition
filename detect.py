@@ -3,7 +3,7 @@ import os
 import tensorflow as tf
 import numpy as np
 from PIL import Image
-
+import time
 
 # Define number to label mapping
 number_map = {
@@ -37,11 +37,26 @@ else:
     # Add a fourth dimension to the array to represent the batch size (needed for model.predict)
     new_image = np.expand_dims(new_image, axis=0)
 
+    # Start time
+    start_time=time.time()
+
     # Make the prediction using the trained model
     prediction = my_model.predict(new_image)
 
+    # End the time
+    end_time=time.time()
+
+    # Calculate the duration
+    duration= end_time-start_time
+
+    # Calculate the timing (Hour-Min-Sec)
+    hours = duration // 3600
+    minutes = (duration - (hours * 3600)) // 60
+    seconds = duration - ((hours * 3600) + (minutes * 60))
+
     # Get the index of the predicted class
     predicted_class_index = np.argmax(prediction)
+    print(f'Predicting elapsed time was {str(hours)} hours, {minutes:4.1f} minutes, {seconds:4.2f} seconds')
 
     # Map the predicted class index to a number
     if predicted_class_index in number_map:
