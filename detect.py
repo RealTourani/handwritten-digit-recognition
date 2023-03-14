@@ -23,7 +23,7 @@ if args.image_path is None or not os.path.exists(args.image_path):
     print('Error: Invalid image path')
 else:
     # Load the trained model
-    my_model = tf.keras.models.load_model('trained_model.h5')
+    my_model = tf.keras.models.load_model('trained_model.h5', compile=False)
 
     # Load the image using PIL
     new_image = Image.open(args.image_path)
