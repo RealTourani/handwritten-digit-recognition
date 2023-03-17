@@ -76,7 +76,10 @@ Finally, we add a softmax function to convert a vector of values to a probabilit
  The accuracy on the test dataset is 0.98 and the loss is 0.085.
  Also, the F1 score and precision are 0.98.
 
-  
+## Detection<a name="detection"></a>
+For detecting handwritten digits you can run [detect.py](https://github.com/RealTourani/handwritten-digit-recognition/blob/main/detect.py) in the command line like this:
+
+    python detect.py -img test_image\1_1_A_0.jpg
 
 ## Docker<a name="Docker"></a>
 If you want to use Docker, first of all, you have to clone the repository.
