@@ -18,6 +18,8 @@
 
 - [Compiling the model](https://github.com/RealTourani/handwritten-digit-recognition#compiling-the-model)
 
+- [Detection](https://github.com/RealTourani/handwritten-digit-recognition#detection)
+
 - [Docker](https://github.com/RealTourani/handwritten-digit-recognition#docker)
 
 
