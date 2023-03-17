@@ -9,6 +9,7 @@
   
 
 ## Table of contents
+- [Overview](https://github.com/RealTourani/handwritten-digit-recognition#overview-)
 
 - [Explanation of the dataset](https://github.com/RealTourani/handwritten-digit-recognition/tree/main#explanation-of-the-dataset)
 
